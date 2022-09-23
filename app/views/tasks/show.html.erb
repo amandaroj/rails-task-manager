@@ -2,4 +2,18 @@
 <div class="container">
   <h1><%= @task.title %></h1>
   <p><%= @task.details %></p>
+  <% if @task.completed  %>
+   <p>This task has been completed</p>
+  <% else %>
+  <p>This task has not been completed yet</p>
+   <% end %>
+
+
+  <button class="btn btn-primary mt-3 btn-style">
+    <%=link_to "Back to list", tasks_path%>
+  </button>
+
+    <button class="btn btn-primary mt-3 btn-style">
+    <%=link_to "Edit", edit_task_path%>
+  </button>
   </div>

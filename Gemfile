@@ -71,3 +71,5 @@ end
 gem "cssbundling-rails", "~> 1.1"
 
 gem 'sass-rails'
+
+gem "simple_form", github: "heartcombo/simple_form"
